@@ -1,0 +1,74 @@
+/*
+  Name: John Wang
+  Date: April 16, 2019
+  Section: CSE 154AC
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Hind|Noto+Sans+JP:700');
+
+body {
+  background-color: rgb(220,220,220);
+}
+
+header {
+  background-color: #0099FF;
+  color: white;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.selected {
+  border: 2px solid #0066ff;
+}
+
+#submit, #browse {
+  margin-top: 80px;
+  margin-left: 80px;
+  width: 160px;
+  font-family: 'Hind', sans-serif;
+}
+
+#main-content {
+  margin-top: 60px;
+}
+
+#input, #image-preview, #output {
+  height: 600px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+#input {
+  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#input > img {
+  margin-bottom: 30px;
+  object-fit: cover;
+  height: 130px;
+}
+
+#image-preview {
+  overflow: hidden;
+}
+
+#image-preview img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 600px;
+}
+#output {
+  padding-right: 6rem;
+}
+
+#output > p{
+  border: 2px solid rgb(50,50,50);
+  background-color: rgb(169,169,169);
+  height: 600px
+}
