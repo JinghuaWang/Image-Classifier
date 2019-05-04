@@ -33,9 +33,10 @@
 
         <div id="main-content" class="row">
           <div id="input" class="col-2">
-            <img src="img/chair.jpg" alt="chair" class="img-thumbnail" id="img1">
+            <!--https://www.wonderplugin.com/wordpress-lightbox/-->
+            <img src="https://www.wonderplugin.com/videos/demo-image0.jpg" alt="chair" class="img-thumbnail" id="img1">
             <!--source:https://www.forbes.com/places/wa/seattle/-->
-            <img src="img/seattle.jpg" alt="seattle" class="img-thumbnail" id="img2">
+            <img src="https://i.forbesimg.com/media/lists/places/seattle-wa_416x416.jpg" alt="seattle" class="img-thumbnail" id="img2">
             <!--source: https://www.seattleglobalist.com/2018/04/24/microaggressions-study/73607-->
             <img src="img/uw.jpg" alt="uw campus" class="img-thumbnail" id="img3">
             <!--source: https://www.tacoma.uw.edu/international-programs/article/2015-husky-pride-fund-scholarship-->
@@ -43,18 +44,21 @@
           </div>
 
           <div id="image-preview" class="col-5">
-            <img src="img/seattle.jpg" class="rounded mx-auto d-block" alt="image preview">
+            <img src="https://www.wonderplugin.com/videos/demo-image0.jpg" class="rounded mx-auto d-block" alt="image preview">
           </div>
 
           <div id="output" class="col-5">
-            <P>Please select an image</p>
+            <div id = "output-text">
+              <P>Please select an image</p>
+              <p>The image size could not be larger than 4MB</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="row justify-content-md-center">
-        <button type="button" class="btn btn-light btn-lg" id="browse">Browse</button>
-        <button type="button" class="btn btn-primary btn-lg" id="submit">Submit</button>
+        <input type="email" class="form-control col-3" id="url-input" placeholder="URL">
+        <button type="button" class="btn btn-primary btn-lg col-2" id="submit">Submit</button>
       </div>
 
     </main>
