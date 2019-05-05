@@ -4,7 +4,9 @@
   Date: April 30, 2019
   Section: CSE 154 AC
 
-
+  index.html is the website that can interact with the Microsoft Computer Vision API.
+  Users type-in an URL and get the image classification result on the output section.
+  There some test images that enables the users to easily interact with the website.
 -->
 <html lang="en">
   <head>
@@ -12,35 +14,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS and some third-party libraries-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
     <title>Image classifier</title>
   </head>
   <body>
+    <!--I could add an icon and links to otehr modules in the header later-->
     <header>
         <h1>Image Classifier</h1>
     </header>
     <main>
+      <!--I know there are a lot of divs in here, but this is the style that
+          boostrap recommands to use-->
       <div class="container-fluid">
-
         <div id="main-content" class="row">
           <div id="input" class="col-2">
             <!--https://www.wonderplugin.com/wordpress-lightbox/-->
             <img src="https://www.wonderplugin.com/videos/demo-image0.jpg" alt="chair" class="img-thumbnail" id="img1">
-            <!--source:https://www.forbes.com/places/wa/seattle/-->
-            <img src="https://i.forbesimg.com/media/lists/places/seattle-wa_416x416.jpg" alt="seattle" class="img-thumbnail" id="img2">
             <!--source: https://www.seattleglobalist.com/2018/04/24/microaggressions-study/73607-->
-            <img src="img/uw.jpg" alt="uw campus" class="img-thumbnail" id="img3">
+            <img src="https://www.seattleglobalist.com/wp-content/uploads/2017/02/University-of-Washington-1.jpg" alt="uw campus" class="img-thumbnail" id="img3">
+            <!--source:https://courses.cs.washington.edu/courses/cse154/18au/staff/jack-venberg/-->
+            <img src="https://courses.cs.washington.edu/courses/cse154/18au/staff/jack-venberg/WafflesDaisy.jpg" alt="seattle" class="img-thumbnail" id="img2">
             <!--source: https://www.tacoma.uw.edu/international-programs/article/2015-husky-pride-fund-scholarship-->
-            <img src="img/husky.jpg" alt="kusky" class="img-thumbnail"id="img4">
+            <img src="https://www.tacoma.uw.edu/sites/default/files/sections/InternationalPrograms/husky_grad.jpg" alt="kusky" class="img-thumbnail" id="img4">
           </div>
 
           <div id="image-preview" class="col-5">
@@ -57,7 +60,7 @@
       </div>
 
       <div class="row justify-content-md-center">
-        <input type="email" class="form-control col-3" id="url-input" placeholder="URL">
+        <input type="url" class="form-control col-3" id="url-input" placeholder="URL">
         <button type="button" class="btn btn-primary btn-lg col-2" id="submit">Submit</button>
       </div>
 

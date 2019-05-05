@@ -1,9 +1,11 @@
 /*
   Name: John Wang
-  Date: April 16, 2019
+  Date: April 30, 2019
   Section: CSE 154AC
 
-
+  styles.css layout the content of the index.html page.
+  Most of the styles are handled by the Bootstrap framework but I customize some
+  of the styles.
 */
 
 @import url('https://fonts.googleapis.com/css?family=Hind|Noto+Sans+JP:700');
@@ -21,19 +23,12 @@ header {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+dt {
+  font-size: 1.5em;
+  color: #296dd8;
+}
 .selected {
   border: 2px solid #0066ff;
-}
-
-#submit, #url-input {
-  margin-top: 60px;
-  margin-left: 40px;
-  font-family: 'Hind', sans-serif;
-}
-
-#submit {
-  max-width: 160px;
-  min-width: 100px;
 }
 
 #main-content {
@@ -77,4 +72,15 @@ header {
   border: 2px solid rgb(50,50,50);
   background-color: rgb(169,169,169);
   height: 600px
+}
+
+#submit, #url-input {
+  margin-top: 60px;
+  margin-left: 40px;
+  font-family: 'Hind', sans-serif;
+}
+
+#submit {
+  max-width: 160px;
+  min-width: 100px;
 }
